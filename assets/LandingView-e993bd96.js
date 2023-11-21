@@ -1,0 +1,1 @@
+import{o as r,c as a}from"./index-33970549.js";const s=(e,n)=>{const t=e.__vccOpts||e;for(const[c,o]of n)t[c]=o;return t},_={};function l(e,n){return r(),a("h1",null,"landing page")}const i=s(_,[["render",l]]);export{i as default};
