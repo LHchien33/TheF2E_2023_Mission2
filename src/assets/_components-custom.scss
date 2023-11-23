@@ -1,3 +1,30 @@
 .btn-pd-bg {
+  --bs-btn-color:  var(--bs-t-dark);
   --bs-btn-hover-bg: #{shade-color($product-bg, 10%)};
+}
+
+.form-select {
+  background-color: var(--bs-pd-bg);
+  box-shadow: unset;
+}
+
+.form-select-group-custom > .form-select {
+  border-radius: var(--bs-border-radius-pill);
+  border-left: 0;
+  border-right: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .form-select-md-with-icon-search {
+    padding-left: 42px;
+    background-image: var(--bs-form-select-bg-img), url('../assets/images/icon_search.svg');
+    background-position: $form-select-bg-position, left $form-select-padding-x center;
+    background-size: $form-select-bg-size, 16px 16px;
+  }
+}
+
+.form-select-with-left-vr {
+  background-image: var(--bs-form-select-bg-img), url('../assets/images/icon_vr.svg');
+  background-position: $form-select-bg-position, left -8px center;
+  background-size: $form-select-bg-size, 16px 16px;
 }
