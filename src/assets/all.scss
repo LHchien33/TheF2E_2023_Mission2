@@ -33,6 +33,8 @@
 @import "bootstrap/scss/modal";
 @import "bootstrap/scss/forms";
 
+@import "./components-custom";
+
 // Optionally: utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "bootstrap/scss/utilities/api";
 
