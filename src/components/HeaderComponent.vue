@@ -1,8 +1,8 @@
 <template>
 <header class="container-fluid sticky-top bg-white">
-  <div class="shadow-sm row gy-2 py-2 px-1 py-lg-3 px-lg-3 align-items-center flex-md-nowrap">
+  <div class="row gy-2 py-2 px-1 py-lg-3 px-lg-3 align-items-center flex-md-nowrap">
     <div class="col-auto flex-shrink-1">
-      <RouterLink to="/main" class="me-auto my-2">
+      <RouterLink to="/" class="me-auto my-2">
         <LogoRect class="w-100" viewBox="0 0 313 41"></LogoRect>
       </RouterLink>
     </div>

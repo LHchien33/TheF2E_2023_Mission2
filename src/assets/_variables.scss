@@ -91,7 +91,7 @@ $text-dark:        #334155;
 $text-light:       #64748B;
 $role-1:           #8082FF;
 $role-2:           #F4A76F;
-$role-3:           #57D2A9 ;
+$role-3:           #57D2A9;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -344,7 +344,8 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
-  7: $font-size-sm
+  7: $font-size-sm,
+  8: $font-size-base * .75,
 ) !default;
 // scss-docs-end font-sizes
 

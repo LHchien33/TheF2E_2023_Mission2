@@ -30,31 +30,31 @@ import ThemeTitle from '@/assets/images/theme_title.svg';
 const navList = [
   {
     year: '1996',
-    url: '/',
+    url: '/main',
   },
   {
     year: '2000',
-    url: '/',
+    url: '/main',
   },
   {
     year: '2004',
-    url: '/',
+    url: '/main',
   },
   {
     year: '2008',
-    url: '/',
+    url: '/main',
   },
   {
     year: '2012',
-    url: '/',
+    url: '/main',
   },
   {
     year: '2016',
-    url: '/',
+    url: '/main',
   },
   {
     year: '2020',
-    url: '/',
+    url: '/main',
   },
 ];
 

@@ -4,5 +4,36 @@ $utilities: map-merge(
       map-get($utilities, "width"),
       ( responsive: true ),
     ),
+    "height": map-merge(
+      map-get($utilities, "height"),
+      ( responsive: true ),
+    ),
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "rounded"), "values"),
+          (12: .75rem),
+        ),
+      ),
+    ),
   )
 );
+
+.object-position-top {
+  object-position: top;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.icon-fill-1 {
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+}
