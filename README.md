@@ -1,35 +1,49 @@
-# TheF2E_2023_Mission2
+# TheF2E 2023 Mission2 - 總統即時開票全台地圖
 
-This template should help get you started developing with Vue 3 in Vite.
+![總統即時開票全台地圖](public/cover.png)
 
-## Recommended IDE Setup
+* [Demo 網址](https://lhchien33.github.io/TheF2E_2023_Mission2/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 作品說明
 
-## Customize configuration
+此網站目的為提供使用者查詢台灣地區歷年總統的選舉統計資料，目前僅有模擬資料
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## 系統說明
 
-## Project Setup
+**版本**
 
-```sh
+Node.js `v18.14.2`
+
+**專案運行**
+
+您可以按照以下步驟建置並運行專案：
+
+```shell
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
 
-```sh
-npm run build
+## 資料夾說明
+
+```shell
+├── ...
+├── public            # 公共圖片資源
+├── src
+│   ├── assets/       # 靜態資源，如圖片與 scss 樣式
+│   ├── components/   # 元件，包含頁首導覽列、地圖彈跳視窗等
+│   ├── router/       # 路由設定
+│   ├── views/        # 頁面放置處，包含進入頁與主要頁面
+│   └── ...
+└── ...
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## 主要使用技術
+* Vue 3 (Composition API)
+* Vite 4
+* Bootstrap 5
 
-```sh
-npm run lint
-```
+## 相關連結
+
+- [關卡資訊 | 第二關 - 總統即時開票全台地圖](https://2023.thef2e.com/newsb)
+* [設計稿與設計師資訊（jhen）](https://2023.thef2e.com/users/12061579704041679194?week=2)
