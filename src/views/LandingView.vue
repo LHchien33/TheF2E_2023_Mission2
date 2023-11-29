@@ -7,8 +7,8 @@
         <ThemeTitle class="d-block w-75 h-auto mx-auto mb-6 " viewBox="0 0 250 23"></ThemeTitle>
         <p class="fs-4 fw-bold mb-4 text-primary">選擇查詢年份</p>
         <ul class="list-unstyled mb-8 g-4 row row-cols-2 row-cols-md-4 row-cols-xl-5">
-          <li class="col" v-for="item in navList" :key="item.year">
-            <RouterLink :to="item.url" class="btn btn-pd-bg fw-bold py-3 w-100 rounded-pill">{{ item.year }}</RouterLink>
+          <li class="col" v-for="num in navList" :key="num">
+            <RouterLink :to="{ path: '/main', query: { year: num }}" class="btn btn-pd-bg fw-bold py-3 w-100 rounded-pill">{{ num }}</RouterLink>
           </li>
         </ul>
       </div>
@@ -27,36 +27,7 @@ import { RouterLink } from 'vue-router';
 import LogoMain from '@/assets/images/logo_main.svg';
 import ThemeTitle from '@/assets/images/theme_title.svg';
 
-const navList = [
-  {
-    year: '1996',
-    url: '/main',
-  },
-  {
-    year: '2000',
-    url: '/main',
-  },
-  {
-    year: '2004',
-    url: '/main',
-  },
-  {
-    year: '2008',
-    url: '/main',
-  },
-  {
-    year: '2012',
-    url: '/main',
-  },
-  {
-    year: '2016',
-    url: '/main',
-  },
-  {
-    year: '2020',
-    url: '/main',
-  },
-];
+const navList = [1996, 2000, 2004, 2008, 2012, 2016, 2020];
 
 const roles = ['vampire', 'supervillain', 'troll', 'mage', 'elf', 'zombie'];
 function getImageUrl(name) {

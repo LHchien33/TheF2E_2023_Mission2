@@ -8,32 +8,21 @@
     </div>
     <div class="col-auto ms-auto flex-grow-1 flex-md-grow-0">
       <label for="selectYear" class="form-label fw-bold me-3 d-none d-xl-inline-block">選擇年份</label>
-      <select id="selectYear" class="form-select d-inline-block w-100 w-md-auto rounded-pill">
+      <select id="selectYear" class="form-select d-inline-block w-100 w-md-auto rounded-pill" v-model="year" @change="changeYear(year)">
         <option selected>選擇年份</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+        <option v-for="num in navList" :key="num" :value="num">{{ num }}</option>
       </select>
     </div>
     <div class="col-auto flex-grow-1 flex-md-grow-0" style="flex: 0 1 607px;">
       <div class="input-group form-select-group-custom">
         <select class="form-select form-select-md-with-icon-search">
           <option selected>全部</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
         </select>
-        <select class="form-select form-select-with-left-vr">
+        <select class="form-select form-select-with-left-vr" disabled>
           <option selected>選擇區域</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
         </select>
-        <select class="form-select form-select-with-left-vr">
+        <select class="form-select form-select-with-left-vr" disabled>
           <option selected>選擇里</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
         </select>
       </div>
     </div>
@@ -48,8 +37,21 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router';
+import { ref, onMounted } from 'vue';
+import { RouterLink, useRouter, useRoute } from 'vue-router';
 import LogoRect from '@/assets/images/logo_rect.svg';
+
+const year = ref(0);
+const route = useRoute();
+const router = useRouter();
+onMounted(() => {
+  year.value = route.query.year;
+});
+function changeYear(num) {
+  router.push({ path: '/main', query: { year: num } });
+}
+
+const navList = [1996, 2000, 2004, 2008, 2012, 2016, 2020];
 
 const shareBtn = ['fb', 'insta', 'youtube'];
 function getImageUrl(name) {
