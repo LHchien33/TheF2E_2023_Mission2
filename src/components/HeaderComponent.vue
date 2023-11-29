@@ -58,29 +58,3 @@ function getImageUrl(name) {
   return new URL(`../assets/images/${name}`, import.meta.url).href;
 }
 </script>
-
-<style scoped>
-.icon-search {
-  padding-left: 12px;
-  background-color: var(--bs-pd-bg);
-}
-
-@media (min-width: 768px){
-  .icon-search {
-    padding-left: 28px;
-    position: relative;
-  }
-
-  .icon-search::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 16px;
-    height: 16px;
-    background-image: url('../assets/images/icon_search.svg');
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-  }
-}
-</style>

@@ -1,4 +1,5 @@
 <template>
+<MapModal></MapModal>
 <div class="d-flex flex-column vh-100">
   <HeaderComponent></HeaderComponent>
   <div class="d-lg-flex flex-grow-1 overflow-y-scroll" ref="mainScrollSection">
@@ -185,6 +186,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import MapModal from '@/components/MapModal.vue';
 // eslint-disable-next-line no-unused-vars
 import { Modal } from 'bootstrap';
 import HeaderComponent from '@/components/HeaderComponent.vue';
