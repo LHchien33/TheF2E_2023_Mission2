@@ -5,7 +5,7 @@
       <div class="px-4 py-3 d-flex justify-content-between align-items-center">
         <div class="fw-bold">台灣地圖</div>
         <button type="button" class="btn p-0 shadow-none" data-bs-dismiss="modal" data-bs-target="#mapModal">
-          <img src="../assets/images/dismiss_btn.svg" alt="關閉視窗按鈕">
+          <img :src="dismissIcon" alt="關閉視窗按鈕">
         </button>
       </div>
       <div class="overflow-hidden flex-grow-1" id="modal-body" style="background-color: #ebfcfc;">
@@ -24,6 +24,11 @@
   </div>
 </div>
 </template>
+
+<script setup>
+// eslint-disable-next-line import/no-unresolved
+import dismissIcon from '@/assets/images/dismiss_btn.svg?url';
+</script>
 
 <style>
 .modal-container {

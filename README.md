@@ -45,5 +45,5 @@ npm run dev
 
 ## 相關連結
 
-- [關卡資訊 | 第二關 - 總統即時開票全台地圖](https://2023.thef2e.com/newsb)
+- [關卡資訊 | 第二關 - 總統即時開票全台地圖](https://2023.thef2e.com/news)
 * [設計稿與設計師資訊（jhen）](https://2023.thef2e.com/users/12061579704041679194?week=2)
